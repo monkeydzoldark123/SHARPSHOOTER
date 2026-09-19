@@ -1,0 +1,42 @@
+[gd_scene format=3 uid="uid://dkdd5jn3bsfp2"]
+
+[node name="game_play" type="Control" unique_id=1889746720]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="game_over" type="Control" parent="." unique_id=29935798]
+visible = false
+z_index = 10
+anchors_preset = 0
+offset_left = 779.0
+offset_top = 224.0
+offset_right = 1156.0
+offset_bottom = 264.0
+
+[node name="ColorRect" type="ColorRect" parent="game_over" unique_id=1114064526]
+layout_mode = 0
+offset_left = -838.0
+offset_top = -566.0
+offset_right = 315.0
+offset_bottom = 315.0
+color = Color(0.25882354, 0.25882354, 0.25882354, 1)
+
+[node name="Label" type="Label" parent="game_over/ColorRect" unique_id=847347122]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -227.5
+offset_top = -158.5
+offset_right = 202.5
+offset_bottom = -55.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 75
+text = "GAME OVER"

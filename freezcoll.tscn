@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://o3cjcv8sqykb"]
+
+[ext_resource type="Texture2D" uid="uid://q0thaj8qqr23" path="res://assets/Sprite/fc433.png" id="1_r5sqg"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_qbw4x"]
+radius = 34.36568
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_d3qts"]
+radius = 36.013885
+
+[node name="freezcoll" type="RigidBody2D" unique_id=2116054901]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=656989891]
+shape = SubResource("CircleShape2D_qbw4x")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=995277551]
+texture = ExtResource("1_r5sqg")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1458593451]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1009380404]
+shape = SubResource("CircleShape2D_d3qts")
